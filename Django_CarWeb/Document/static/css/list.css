@@ -1,0 +1,467 @@
+body,html{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background:url(https://velodynelidar.com/images/products/hdl-64e/UserData_PointCloud2_Large.jpg) no-repeat center fixed;
+ background-size: 100% 100%;
+}
+
+.fondo{
+   width: 100%;
+   height: 100%;
+}
+
+.fondo .oscurecer {
+
+    background:rgba(40,57,90,.9);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    }
+
+
+
+
+.fondo .oscurecer p {
+    position: absolute;
+    top: 5%;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right:0;
+
+    font-style: italic;
+    font-size: 32px;
+    color:white;
+}
+
+
+
+
+
+.fondo .oscurecer .pagination {
+    position: absolute;
+    top: 92%;
+    left:20%%;;
+
+}
+
+
+
+.fondo .oscurecer .buscador{
+
+    position: absolute;
+    top:5%;
+    right:1.1%;
+
+}
+
+.fondo .oscurecer .contenedor{
+    position:absolute;
+    marin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    top:55%;
+
+}
+
+
+
+
+.login-panel{
+    text-align:center;
+	font-size: 18pt;
+	font-style:italic;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right:0;
+    top:15%;
+    width:360px;
+	height:500px;
+	box-shadow:0 17px 17px 17px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	background:rgba(40,57,90,.8);
+	border-radius: 50px;
+
+}
+
+.login-panel .panel-heading .title{
+    text-align:center;
+    font-style:italic;
+    font-size: 20pt;
+    color: White;
+    width:100%;
+
+}
+
+.login-panel .login-formularios{
+
+    width:100%;
+	height:100%;
+	font-size: 13pt;
+	font-style:italic;
+	color: black;
+
+
+}
+
+.login-panel .login-formularios p{
+
+    position:absolute;
+    top:75%;
+    left:4%;
+    right:4%;
+	font-size: 15pt;
+	font-style:italic;
+	color: white;
+
+
+}
+
+
+.login-panel .login-formularios button{
+
+    width:150px;
+    height:40px;
+    font-size: 13pt;
+    font-style:italic;
+
+
+}
+
+.create-panel .edit-formularios{
+
+    position: absolute;
+    top: 10%;
+    width:100%;
+	height:100%;
+	font-size: 13pt;
+	font-style:italic;
+	color: black;
+
+
+}
+
+
+.fondo .osucrecer #descript.button1 .model-dialog .model-content .model-body .button {
+
+    position:absolute;
+    margin-left: auto;
+    margin-right:auto;
+    left:35%;
+    border-radius:10px;
+    width: 80px;
+    height:30px;
+    font-style: italic;
+    font-size:12pt;
+    top:80%;
+
+
+
+}
+
+
+.create-panel .edit-formularios p{
+
+    position:absolute;
+    top:70%;
+    left:10%;
+    right:10%;
+	font-size: 12pt;
+	font-style:italic;
+	color: white;
+
+
+}
+
+.create-panel .edit-formularios button{
+
+	width:180px;
+    height:40px;
+    font-size: 13pt;
+    font-style:italic;
+
+
+}
+
+
+
+.create-panel .register-formularios{
+
+    position: absolute;
+    top: 10%;
+    width:100%;
+	height:100%;
+	font-size: 13pt;
+	font-style:italic;
+	color: black;
+	}
+
+.create-panel .register-formularios p{
+
+    position:absolute;
+    top:75%;
+    left:4%;
+    right:4%;
+	font-size: 15pt;
+	font-style:italic;
+	color: white;
+}
+
+
+.create-panel .register-formularios button{
+
+    position:absolute;
+    top:60%;
+    left:25%;
+	width:180px;
+    height:40px;
+    font-size: 13pt;
+    font-style:italic;
+
+}
+
+
+
+.create-panel .panel-heading .title{
+    text-align:center;
+    font-style:italic;
+    font-size: 20pt;
+    color: White;
+
+
+}
+
+.modal-body textarea{
+    width: 550px;
+    height:125px;
+    color: grey;
+    font-style:italic;
+    font-size: 12pt;
+
+
+}
+
+
+
+
+
+.create-panel{
+    text-align:center;
+    margin-left: auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+	font-size: 18pt;
+    position: absolute;
+    top:15%;
+    width:360px;
+	height:500px;
+	box-shadow:0 17px 17px 17px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	background:rgba(40,57,90,.9);
+	border-radius: 50px;
+
+}
+
+
+
+
+
+
+.fondo .oscurecer #myDiv{
+    position:absolute;
+    top:55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    box-shadow:0 17px 17px 17px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    width:70%;
+    height:70%;
+    background:rgba(40,57,90,.8);
+
+
+}
+
+
+
+
+.fondo .oscurecer #myDiv .plot-container .svg-container {
+
+
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right:0;
+   width:100%;
+   height:100%;
+
+
+}
+
+
+
+.fondo .oscurecer #myDiv .plot-container .svg-container .main-svg{
+
+
+    height:0vh;
+    width:0vh;
+
+}
+
+
+
+
+.fondo .oscurecer #myDiv .dropdown{
+    position:absolute;
+    top:0%;
+    width:100px;
+    float:left;
+    margin-left:-250px;
+}
+
+
+
+
+.fondo .oscurecer #myDiv .dropdown ul.dropdown-menu {
+
+    left: -40% ;
+    transform: translateX(-50%,);
+    width:225px;
+    height:400px;
+    background:rgba(40,57,90,.8);
+
+}
+
+
+.fondo .oscurecer #myDiv .dropdown ul.dropdown-menu li{
+
+    text-align:center;
+    font-style:italic;
+    font-size: 12pt;
+    color:white
+
+}
+
+.fondo .oscurecer #myDiv .dropdown ul.dropdown-menu li input{
+
+
+    color:black
+
+}
+
+
+.fondo .oscurecer #myTable.caracol {
+   position:absolute;
+   width: 75%;
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right:0;
+   top:22%;
+   background-color:#DCDCDE;
+   box-shadow:0 17px 17px 17px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+   border-collapse: separate !important;
+   border-radius: 50px;
+   overflow: hidden;
+
+
+}
+
+
+.caracol th{
+
+
+       text-align:center;
+       font-style:italic;
+       font-size: 20pt;
+       height: 85px;
+
+}
+
+
+
+.caracol td {
+
+
+       text-align:center;
+       font-style:italic;
+       font-size: 15pt;
+       height: 70px;
+
+
+}
+
+
+
+.modal-title p.p2{
+     position:absolute;
+     color:black;
+     margin-left:auto;
+     margin-right:auto;
+     margin-top:auto;
+     top:5%;
+     left:0;
+     right:0;
+     font-style:italic;
+     font-size:15pt;
+}
+
+
+
+
+.fondo .oscurecer .limiter .container-table100 .wrap-table100 .table .test3 {
+    position:absolute;
+    top:15%;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+
+}
+
+.fondo .oscurecer .limiter .container-table100 .wrap-table100 .table .test3  .model-content .model-body{
+     background-color: #6c7ae0;
+
+}
+
+
+.fondo .oscurecer  #back.button2{
+
+    background-color:green;
+    color:white;
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:5%;
+    border-radius:10px;
+    width:80px;
+    height:30px:
+    font-style:italic;
+    font-size:12pt;
+    top:95%;
+
+}
+
+
+.fondo .oscurecer #datos {
+
+    position:absolute;
+    margin-left:auto;
+    margin-right;
+    left:0;
+    right:0;
+    top:12%;
+    text-align:center;
+
+
+
+}
+
+
+
+

@@ -1,0 +1,49 @@
+{% include 'Document/base.html' %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/list.css' %}">
+
+<div class = "fondo">
+    <div class="oscurecer">
+
+                <div class="create-panel">
+                        <div class="panel-heading">
+                            <h3 class="title">Edita tus campos</h3>
+                        </div>
+                        <div class="edit-formularios">
+                         <center><form role="form" method="post">
+                                {% csrf_token %}
+								{% for field in form %}
+									<br><br>{{ field }}<br>
+								{% endfor %}
+                                {% if form.non_field_errors %}
+                                    <ul class style="color:red";="non-field-errors">
+                                        {% for err in form.non_field_errors %}
+                                            <li class="form-error">{{ err }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                {% if messages %}
+                                    <br><ul class style="color:red";="messages">
+                                        {% for message in messages %}
+                                            <li class="{{ message.tags }}">{{ message }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+
+								<br><br><button class="btn btn-success" type="submit">Guarda los cambios</button>
+                         </form></center>
+                        </div>
+
+                </div>
+
+        <form method="GET" action="{% url 'list' %}">
+
+            <button id=back class="button2" type="submit" ><span class="glyphicon glyphicon-arrow-left"></span></button>
+
+        </form>
+
+
+
+    </div>
+</div>

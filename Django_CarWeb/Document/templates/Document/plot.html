@@ -1,0 +1,75 @@
+{% include 'Document/base.html' %}
+{% block content %}
+
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/list.css' %}">
+<script src="{% static 'js/selectpoint.js' %}"></script>
+<script src="{% static 'js/plot.js' %}"></script>
+
+
+
+ <div class = "fondo">
+    <div class="oscurecer">
+
+        <header>
+
+            <p>Se esta representando la figura: {{filename}}<p>
+
+        </header>
+
+
+        <form method="GET" action="{% url 'list' %}">
+
+            <button id=back class="button2" type="submit" ><span class="glyphicon glyphicon-arrow-left"></span></button>
+
+        </form>
+
+        <div id="datos">
+
+             <form role="form" id ="myform" method="post" class="my-ajax-form" data-url="?P<numb>\d+/create_image/">
+                 {% csrf_token %}
+                 {% for field in form %}
+                    {{ field }}
+
+                 {% endfor %}
+
+                 <button class="btn btn-success" type="submit">Guardar objeto</button>
+
+             </form>
+
+        </div>
+
+
+
+            <div id="myDiv">
+                 <div class="dropdown" >
+                    <button class="btn btn-success dropdown-toggle" type="button" id="about-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" padding: 10px 20px;font-size: 12pt;font-style:italic;">
+                    Descripción
+                    <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>Northing: <input type="number" name="gps_north" value="{{gps_north}}" ></li><br>
+                        <li>Easting: <input type="number" name="gps_easting"  value="{{gps_easting}}"></li><br>
+                        <li>Latitud: <input type="text" name="gps_lat" step="0.01" value="{{gps_lat}}"></li><br>
+                        <li>Longitud: <input type="text" name="gps_long" step="0.01" value="{{gps_long}}"></li><br>
+                        <li>Layers: <input type="number" name="layers"  value="{{layers}}"></li>
+                    </ul>
+
+                 </div>
+
+                <div id="filename" data="{{filename}}"></div>
+                <div id="xdata" data="{{x}}"></div>
+                <div id="ydata" data="{{y}}"></div>
+                <div id="zdata" data="{{z}}"></div>
+
+            </div>
+
+
+    </div>
+ </div>
+
+
+
+{% endblock %}
+

@@ -1,0 +1,144 @@
+{% include 'Document/base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/list.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
+
+<body>
+
+<div class = "fondo">
+    <div class="oscurecer">
+
+        <div class=" buscador">
+
+            <form class="navbar-form " method="GET" action="">
+                <input type="search" class="form-control glyphicon glyphicon-search" name ='q' placeholder="Search..." value='{{ request.GET.q}}'>
+                <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> Search</button>
+            </form>
+
+        </div>
+
+
+        <div class="limiter">
+		 <div class="container-table100">
+			<div class="wrap-table100">
+					<div class="table">
+
+						<div class="row header">
+							<div class="cell">
+								Nombre
+							</div>
+							<div class="cell">
+								Fecha
+							</div>
+							<div class="cell">
+								Subido por
+							</div>
+							<div class="cell">
+
+							</div>
+							<div class="cell">
+
+							</div>
+							<div class="cell">
+
+							</div>
+
+                        </div>
+
+
+
+                         {% for Document in object_list %}
+
+						   <div class="row">
+
+							    <div class="cell" data-title="Full Name">
+								    {{Document.Nombre}}
+							    </div>
+							    <div class="cell" data-title="Age">
+								    {{Document.uploaded_at}}
+							    </div>
+							    <div class="cell" data-title="Job Title">
+								    {{Document.user}}
+                                </div>
+                               <div class="cell" >
+                                   <a href='{{ Document.document.url }}'><center><button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-download"></i> Download</button></center></a>
+                               </div>
+							   <div class="cell" >
+                                   <center><button type="submit" class="btn btn-default" data-toggle="modal" data-target="#myModal{{Document.id}}"><i class="glyphicon glyphicon-trash"></i> Delete</button></center></td>
+                               </div>
+							   <div class="cell" >
+                                   <a href="{% url 'plot' Document.numb %}"><center><button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-stats"></i> Representación</button></center></a>
+                               </div>
+
+
+
+
+
+                           </div>
+
+                           <div class="test3 modal  modal-dialog " id="myModal{{Document.id}}" style="border-radius: 15px;">
+                             <div class="modal-content">
+                                <div class=" modal-body"    style="background: #6c7ae0;;  color: white;">
+                                    <FONT size="3.8">¿Estas seguro de eliminar el fichero: {{Document.Nombre}}?</FONT>
+                                </div>
+                             <div class="modal-footer" >
+                                <form action= "{% url 'delete' Document.id %}" method='POST'>
+                                    {% csrf_token %}
+                                    <center><input type='submit' value='Delete' /><input type="submit" value="Cancel"  data-dismiss="modal"/></center>
+                                </form>
+                             </div>
+
+                             </div>
+
+                           </div>
+                         {% endfor %}
+					</div>
+            </div>
+         </div>
+	    </div>
+
+        <div class="pagination">
+
+             {% if page_obj.has_previous %}
+                  <li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+                {% else %}
+                  <li class="disabled"><span>&laquo;</span></li>
+             {% endif %}
+
+
+
+            {% for i in paginator.page_range %}
+                {% if page_obj.number == i %}
+                    <li class="active"><a href="?page={{ i }}">{{ i }}</a></li>
+                {% else %}
+                    <li><a href="?page={{ i }}">{{ i }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+
+            {% if page_obj.has_next %}
+
+                  <li><a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+
+
+            {% else %}
+
+                  <li class="disabled"><span>&raquo;</span></li>
+
+            {% endif %}
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body>
+
+{% endblock %}
+
+

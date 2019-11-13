@@ -1,0 +1,206 @@
+
+
+body,html{
+
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background:url(https://velodynelidar.com/images/products/hdl-64e/UserData_PointCloud2_Large.jpg) no-repeat center fixed;
+ background-size: 100% 100%;
+
+
+}
+.fondo{
+   width: 100%;
+   height: 100%;
+}
+
+.fondo .oscurecer {
+
+    background:rgba(40,57,90,.9);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    }
+
+
+.fondo .oscurecer p {
+    position: absolute;
+    top: 12%;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right:0;
+
+    font-style: italic;
+    font-size: 32px;
+    color:white;
+}
+
+
+
+.fondo .oscurecer .pagination {
+    position: absolute;
+    top: 92%;
+}
+
+
+
+.fondo .oscurecer .buscador{
+
+    position: absolute;
+    top:5%;
+    right:1.1%;
+
+}
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.container-table100 {
+  margin-left:auto;
+  margin-right:auto;
+  left:0;
+  right:0;
+  width: 80%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+
+
+}
+
+.wrap-table100 {
+
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow:0 17px 17px 17px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.table {
+  width: 100%;
+  display: table;
+  margin: 0;
+
+
+}
+
+.row {
+  display: table-row;
+  background: #fff;
+}
+
+.row.header {
+  color: #ffffff;
+  background: #6c7ae0;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: block;
+  }
+
+  .row.header {
+    padding: 0;
+    height: 0px;
+  }
+
+  .row.header .cell {
+    display: none;
+  }
+
+
+}
+
+.cell {
+  display: table-cell;
+}
+
+
+.row .cell {
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.2;
+  font-weight: unset !important;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.row.header .cell {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  color: #fff;
+
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 20px;
+}
+
+.row .cell:nth-child(1) {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.row .cell:nth-child(2) {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.row .cell:nth-child(3) {
+  width: 200px;
+  padding-left: 20px;
+}
+.row .cell:nth-child(4) {
+  width: 200px;
+  padding-left: 0px;
+}
+.row .cell:nth-child(5) {
+  width: 200px;
+  padding-left: 0px;
+}
+.row .cell:nth-child(6) {
+  width: 200px;
+  padding-left: 0px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+  .row .cell:nth-child(1) {
+    padding-left: 40px;
+  }
+
+  .row .cell {
+    font-family: Poppins-Regular;
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.2;
+    font-weight: unset !important;
+  }
+
+  .table, .row, .cell {
+    width: 100% !important;
+  }
+}
+
+
