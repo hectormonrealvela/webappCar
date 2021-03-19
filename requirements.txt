@@ -1,7 +1,7 @@
 Django==2.2.7
 django-filter==2.2.0
 django-model-utils==3.2.0
-djangorestframework==3.10.3
+djangorestframework==3.11.2
 numpy==1.17.4
 open3d-python==0.7.0.0
 plotly==4.3.0
